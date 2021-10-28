@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Degem</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo-wrapper">
+                <img src="./assets/ic-toggle-sidebar.svg" class="toggle-sidebar" width="24px" height="24px" alt="">
+                <a href="#" class="nav-logo"><img src="./assets/logo-degem.svg" alt=""></a>
+            </div>
+            <ul class="nav-menu">
+                <span class="ido">IDO</span>
+                <span class="trending"><img src="./assets/ic-trending.png" width="24px" height="24px" alt="">Trending</span>
+                <div class="horizontal-scroll-wrapper">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">#1 Onic</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"># RRQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">#3 Evos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">#4 AlterEgo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">#5 BTR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">#6 Aura</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">#7 Geek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">#8 Genflik</a>
+                    </li>
+                </div>
+                <div class="btn-nav-wrapper">
+                    <img class="toggle" src="./assets/toggle-light-mode.png" alt="">
+                    <button class="btn-blockchain">Blockchain</button>
+                    <button class="btn-connect">Connect</button>
+                </div>
+                
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <aside>
+        <div class="sidebar-wrapper show">
+            <button class="btn-create">
+                <img src="./assets/ic-plus.svg" alt="">
+                Create
+            </button>
+            <div class="sidebar-menu-wrapper sidebar-active">
+                <img src="./assets/Home.svg" alt="">
+                <span class="sidebar-txt">Home</span>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <img src="./assets/Star.svg" alt="">
+                <span class="sidebar-txt">Launchpad</span>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <img src="./assets/Chart.svg" alt="">
+                <span class="sidebar-txt">Leaderboard</span>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <img src="./assets/Document.svg" alt="">
+                <span class="sidebar-txt">Docs</span>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <img src="./assets/Send.svg" alt="">
+                <span class="sidebar-txt">Telegram</span>
+            </div>
+            <div class="sidebar-menu-wrapper">
+                <img src="./assets/Heart.svg" alt="">
+                <span class="sidebar-txt">Twitter</span>
+            </div>
+        </div>
+    </aside>
+    <section class="home-sec-1">
+        <div class="container c-home-sec-1">
+            <span class="title-ido">Current IDO’s</span>
+            <div class="home-page-wrapper">
+                <a href="#" class="home-main-page">All IDO’s</a>
+                <a href="#" class="home-second-page">My Contributions</a>
+            </div>
+            <div class="home-sorting-wrapper">
+                <form action="" class="home-search-form">
+                    <button class="search-button">
+                        <img src="./assets/ic-search.svg" width="20px" height="20px" alt="ic-search">
+                    </button>
+                    <input type="search" name="search" id="search" class="search-input" placeholder="Enter token name or symbol">
+                </form>
+                <div class="dropdown-filter-wrapper">
+                    <span class="dropdown-title">Filter by</span>
+                    <div class="dropdown-status">
+                        <button class="btn-dropdown-filter">
+                        All Status
+                        <img src="./assets/ic-dropdown.svg" alt="ic-dropdown">
+                        </button>
+                        <div class="dropdown-filter-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="dropdown-sort-wrapper">
+                    <span class="dropdown-title">Short by</span>
+                    <div class="dropdown-status">
+                        <button class="btn-dropdown-filter">
+                        No Filter
+                        <img src="./assets/ic-dropdown.svg" alt="ic-dropdown">
+                        </button>
+                        <div class="dropdown-filter-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="home-content-wrapper">
+                <div class="home-card-wrapper">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+                <div class="home-card-wrapper card-center">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+                <div class="home-card-wrapper">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+                <div class="home-card-wrapper">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+                <div class="home-card-wrapper card-center">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+                <div class="home-card-wrapper">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+                <div class="home-card-wrapper">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+                <div class="home-card-wrapper card-center">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+                <div class="home-card-wrapper">
+                    <div class="avatar-wrapper">
+                        <img src="./assets/ic-onic.png" alt="avatar">
+                    </div>
+                    <span class="home-card-title">Onic Token</span>
+                    <span class="home-card-desc">1 BNB = 1,710.00 Onic</span>
+                    <span class="home-card-body-title">Soft/Hard Cap:</span>
+                    <span class="home-card-body-desc">100 BNB - 200 BNB</span>
+                    <div class="progress-bar-wrapper">
+                        <div class="progress-bar-header">
+                            <span class="progress-bar-title">Progress</span>
+                            <span class="progress-bar-number">62,47%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-bar-color"></div>
+                        </div>
+                        <span class="progress-bar-footer">101.23 BNB</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-1nd">
+                        <span class="home-card-footer-tilte">Access:</span>
+                        <span class="home-card-footer-desc-1nd">Public</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-2nd">
+                        <span class="home-card-footer-tilte">Chain:</span>
+                        <span class="home-card-footer-desc-2nd">Binance Smart Chain</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-3nd">
+                        <span class="home-card-footer-tilte">Liquidity:</span>
+                        <span class="home-card-footer-desc-3nd">50%</span>
+                    </div>
+                    <div class="home-card-footer-wrapper-4nd">
+                        <span class="home-card-footer-tilte">Liquidity Lock:</span>
+                        <span class="home-card-footer-desc-4nd">30 Days</span>
+                    </div>
+                    <div class="timer-wrapper">
+                        <div class="txt-timer-wrapper">
+                            <span class="timer-title">Sale Ends In:</span>
+                            <span class="timer-number">01 : 02 : 34 : 56</span>
+                        </div>
+                        <button class="btn-view-ido">View IDO</button>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination-wrapper">
+                <div class="pagination">
+                    <a href="#">
+                        <img src="./assets/arrow-left.svg" alt="">
+                    </a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">...</a>
+                    <a href="#">25</a>
+                    <a href="#">
+                        <img src="./assets/arrow-right.svg" alt="">
+                    </a>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container c-home-footer">
+            <div class="footer-wrapper">
+                <img src="./assets/logo-degem.svg" class="footer-logo" alt="logo-degem">
+                <span class="footer-desc">Nunc lobortis, nulla vitae porttitor pharetra, odio orci malesuada lorem, id sollicitudin orci tellus in lacus. Duis maximus vitae eros varius pretium. Donec convallis massa ipsum, a dapibus odio aliquam a.Morbi eu aliquam velit, et aliquet nulla. Pellentesque varius mattis maximus.</span>
+                <div class="ic-sosmed-wrapper">
+                    <a href="#" class="ic-wrapper ic-twitter">
+                        <img src="./assets/ic-twitter.svg" alt="ic-twitter">
+                    </a>
+                    <a href="#" class="ic-wrapper ic-medium">
+                        <img src="./assets/ic-medium.svg" alt="ic-medium">
+                    </a>
+                    <a href="#" class="ic-wrapper ic-telegram">
+                        <img src="./assets/ic-telegram.svg" alt="ic-telegram">
+                    </a>
+                    <a href="#" class="ic-wrapper">
+                        <img src="./assets/ic-github.svg" alt="ic-github">
+                    </a>
+                </div>
+                <span class="footer-copyright">All rights reserved ©Degem.io 2021</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-menu");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll(".nav-link");
+
+    navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+    }
+
+    const toggle = document.querySelector(".toggle-sidebar");
+    const sidebar = document.querySelector(".sidebar-wrapper");
+    toggle.addEventListener("click", function() {
+        sidebar.classList.toggle("show")
+    })
+
+
+</script>
+</html>

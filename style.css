@@ -848,7 +848,7 @@ body.mobile .sidebar-mobile-wrapper.show  {
         top: 0;
         right: 0;
         max-width: 350px;
-        z-index: 100;
+        z-index: 99;
     }
     .navbar {
         margin-top: 40px;
@@ -857,8 +857,8 @@ body.mobile .sidebar-mobile-wrapper.show  {
         display: none;
     }
     .home-content-wrapper{
-        padding-left: 25px;
-        padding-left: 25px;
+        padding-top: 60px;
+        margin: 0 auto;
     }
     .home-sec-1-tilte-wrapper{
         display: flex;

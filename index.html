@@ -65,10 +65,53 @@
         </nav>
     </header>
     <aside>
+        <div class="sidebar-mobile-wrapper">
+            <div class="sidebar-header-mobile">
+                <a href="#" class="ic-close">
+                    <img src="./assets/ic-close.svg" alt="">
+                </a>
+                <img src="./assets/logo-degem.svg" alt="">
+            </div>
+            <button class="btn-create-mobile">
+                <img src="./assets/ic-plus.svg" alt="">
+                <span class="create-txt">Create</span>
+            </button>
+            <div class="sidebar-wrapper-mobile">
+                <div class="sidebar-menu-wrapper-mobile sidebar-active">
+                    <img src="./assets/Home.svg" alt="">
+                    <span class="sidebar-txt">Home</span>
+                </div>
+                <div class="sidebar-menu-wrapper-mobile">
+                    <img src="./assets/Star.svg" alt="">
+                    <span class="sidebar-txt">Launchpad</span>
+                </div>
+                <div class="sidebar-menu-wrapper-mobile">
+                    <img src="./assets/Chart.svg" alt="">
+                    <span class="sidebar-txt">Leaderboard</span>
+                </div>
+                <div class="sidebar-menu-wrapper-mobile">
+                    <img src="./assets/Document.svg" alt="">
+                    <span class="sidebar-txt">Docs</span>
+                </div>
+                <div class="sidebar-menu-wrapper-mobile">
+                    <img src="./assets/Send.svg" alt="">
+                    <span class="sidebar-txt">Telegram</span>
+                </div>
+                <div class="sidebar-menu-wrapper-mobile">
+                    <img src="./assets/Heart.svg" alt="">
+                    <span class="sidebar-txt">Twitter</span>
+                </div>
+            </div>
+            <div class="btn-nav-wrapper-mobile">
+                <img class="toggle-mobile" src="./assets/toggle-light-mode.png" alt="">
+                <button class="btn-blockchain">Blockchain</button>
+                <button class="btn-connect">Connect</button>
+            </div>
+        </div>
         <div class="sidebar-wrapper show">
             <button class="btn-create">
                 <img src="./assets/ic-plus.svg" alt="">
-                <span class="create-txt">Create</span>
+                <span class="create-txt-ori">Create</span>
             </button>
             <div class="sidebar-menu-wrapper sidebar-active">
                 <img src="./assets/Home.svg" alt="">
@@ -568,7 +611,10 @@
     </footer>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 <script>
+
     // const hamburger = document.querySelector(".hamburger");
     // const navMenu = document.querySelector(".nav-menu");
 
@@ -587,17 +633,38 @@
     //     hamburger.classList.remove("active");
     //     navMenu.classList.remove("active");
     // }
-    
+    const sidebarMobile = document.querySelector(".sidebar-mobile-wrapper")
+    const closeBtn = document.querySelector(".ic-close")
     const toggle = document.querySelector(".toggle-sidebar");
     const sidebartxt = document.querySelectorAll(".sidebar-txt")
-    const createtxt = document.querySelector(".create-txt")
+    const createtxt = document.querySelector(".create-txt-ori")
+    const sidebar = document.querySelector(".sidebar-wrapper")
     // const sidebar = document.querySelector(".sidebar-wrapper");
     toggle.addEventListener("click", function() {
         sidebartxt.forEach(item => {
             item.classList.toggle("show")
         })
+        sidebarMobile.classList.add("show")
+        sidebar.classList.add("show")
         createtxt.classList.toggle("show")
+    });
+    
+    $(document).ready(function() {
+        $(window).resize(function(){
+            if(window.innerWidth < 600) {
+                $("body").addClass("mobile")
+            }
+            else {
+                $("body").removeClass("mobile")
+            }
+        })
     })
+
+    closeBtn.addEventListener("click", function() {
+        sidebarMobile.classList.remove("show")
+
+    })
+    
 
 
 </script>

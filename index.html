@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Degem</title>
 </head>
@@ -20,32 +21,35 @@
             <ul class="nav-menu">
                 <span class="ido">IDO</span>
                 <span class="trending"><img src="./assets/ic-trending.png" width="24px" height="24px" alt="">Trending</span>
-                <div class="horizontal-scroll-wrapper">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">#1 Onic</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"># RRQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">#3 Evos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">#4 AlterEgo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">#5 BTR</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">#6 Aura</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">#7 Geek</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">#8 Genflik</a>
-                    </li>
-                </div>
+                <marquee behavior="smooth" direction="row">
+                    <div class="horizontal-scroll-wrapper">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">#1 Onic</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"># RRQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">#3 Evos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">#4 AlterEgo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">#5 BTR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">#6 Aura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">#7 Geek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">#8 Genflik</a>
+                        </li>
+                    </div>
+                </marquee>
+                
                 <div class="btn-nav-wrapper">
                     <img class="toggle" src="./assets/toggle-light-mode.png" alt="">
                     <button class="btn-blockchain">Blockchain</button>
@@ -64,7 +68,7 @@
         <div class="sidebar-wrapper show">
             <button class="btn-create">
                 <img src="./assets/ic-plus.svg" alt="">
-                Create
+                <span class="create-txt">Create</span>
             </button>
             <div class="sidebar-menu-wrapper sidebar-active">
                 <img src="./assets/Home.svg" alt="">
@@ -94,7 +98,9 @@
     </aside>
     <section class="home-sec-1">
         <div class="container c-home-sec-1">
-            <span class="title-ido">Current IDO’s</span>
+            <div class="home-sec-1-tilte-wrapper">
+              <span class="title-ido">Current IDO’s</span>
+            </div>
             <div class="home-page-wrapper">
                 <a href="#" class="home-main-page">All IDO’s</a>
                 <a href="#" class="home-second-page">My Contributions</a>
@@ -106,33 +112,35 @@
                     </button>
                     <input type="search" name="search" id="search" class="search-input" placeholder="Enter token name or symbol">
                 </form>
-                <div class="dropdown-filter-wrapper">
-                    <span class="dropdown-title">Filter by</span>
-                    <div class="dropdown-status">
-                        <button class="btn-dropdown-filter">
-                        All Status
-                        <img src="./assets/ic-dropdown.svg" alt="ic-dropdown">
-                        </button>
-                        <div class="dropdown-filter-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="dropdown-sort-wrapper">
-                    <span class="dropdown-title">Short by</span>
-                    <div class="dropdown-status">
-                        <button class="btn-dropdown-filter">
-                        No Filter
-                        <img src="./assets/ic-dropdown.svg" alt="ic-dropdown">
-                        </button>
-                        <div class="dropdown-filter-content">
-                            <a href="#">Link 1</a>
-                            <a href="#">Link 2</a>
-                            <a href="#">Link 3</a>
-                        </div>
-                      </div>
+                <div class="filter-wrapper">
+                    <div class="dropdown-filter-wrapper">
+                        <span class="dropdown-title">Filter by</span>
+                        <div class="dropdown-status">
+                            <button class="btn-dropdown-filter">
+                            All Status
+                            <img src="./assets/ic-dropdown.svg" alt="ic-dropdown">
+                            </button>
+                            <div class="dropdown-filter-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="dropdown-sort-wrapper">
+                        <span class="dropdown-title">Short by</span>
+                        <div class="dropdown-status">
+                            <button class="btn-dropdown-filter">
+                            No Filter
+                            <img src="./assets/ic-dropdown.svg" alt="ic-dropdown">
+                            </button>
+                            <div class="dropdown-filter-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                          </div>
+                    </div>
                 </div>
             </div>
             <div class="home-content-wrapper">
@@ -561,29 +569,34 @@
 
 </body>
 <script>
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".nav-menu");
+    // const hamburger = document.querySelector(".hamburger");
+    // const navMenu = document.querySelector(".nav-menu");
 
-    hamburger.addEventListener("click", mobileMenu);
+    // hamburger.addEventListener("click", mobileMenu);
 
-    function mobileMenu() {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    }
+    // function mobileMenu() {
+    //     hamburger.classList.toggle("active");
+    //     navMenu.classList.toggle("active");
+    // }
 
-    const navLink = document.querySelectorAll(".nav-link");
+    // const navLink = document.querySelectorAll(".nav-link");
 
-    navLink.forEach(n => n.addEventListener("click", closeMenu));
+    // navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-    function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-    }
-
+    // function closeMenu() {
+    //     hamburger.classList.remove("active");
+    //     navMenu.classList.remove("active");
+    // }
+    
     const toggle = document.querySelector(".toggle-sidebar");
-    const sidebar = document.querySelector(".sidebar-wrapper");
+    const sidebartxt = document.querySelectorAll(".sidebar-txt")
+    const createtxt = document.querySelector(".create-txt")
+    // const sidebar = document.querySelector(".sidebar-wrapper");
     toggle.addEventListener("click", function() {
-        sidebar.classList.toggle("show")
+        sidebartxt.forEach(item => {
+            item.classList.toggle("show")
+        })
+        createtxt.classList.toggle("show")
     })
 
 
